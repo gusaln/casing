@@ -1,5 +1,4 @@
-cwd = $(shell pwd)
+all: casing
 
-all:
-	go build -o build/casing cmd/casing/main.go
-	ln -i -s -t ~/.local/bin/ $(cwd)/build/casing
+casing:
+	go build -o build/casing main.go

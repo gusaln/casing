@@ -32,13 +32,14 @@ func main() {
 		return
 	}
 
+	args := flag.Args()
 	if flag.NArg() < 1 {
 		flag.Usage()
 		return
 	}
 
 	if isTerminal() {
-		for _, arg := range flag.Args() {
+		for _, arg := range args {
 			os.Stdout.WriteString(transformation(arg))
 			os.Stdout.WriteString("\n")
 		}
@@ -48,7 +49,7 @@ func main() {
 			ts = " "
 		}
 
-		for i, arg := range flag.Args() {
+		for i, arg := range args {
 			os.Stdout.WriteString(transformation(arg))
 
 			if i < flag.NFlag() {
