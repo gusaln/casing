@@ -23,7 +23,8 @@ Available modes:
 Transforming the input to kebab-case:
 
 ```sh
-# Note that the input has to be wrapped in quotes for the program to recognize the argument as a single string
+# Note that the input has to be wrapped in quotes for the program to recognize the argument as a
+# single string
 $ casing -m kebab "Hello World"
 hello-world
 
@@ -47,8 +48,7 @@ HelloWorld
 
 Transforming multiple arguments:
 ```sh
-$ casing "multiple argument test" "HelloWorld" "snekCase" "This is a simple CLI tool that changes the _casing_ of the
-arguments"
+$ casing "multiple argument test" "HelloWorld" "snekCase" "This is a simple CLI tool that changes the _casing_ of the arguments"
 multiple-argument-testhello-world
 snek-case
 this-is-a-simple-cli-tool-that-changes-the--casing--of-the-arguments
